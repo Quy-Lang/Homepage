@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- HEADER -->
+    <header>
+        <div class="header__top d-flex justify-content-between align-items-center text-center container-fluid py-2">
+            <div class="header__left">
+                <a href="tel:08078815542" class="text-white text-decoration-none mr-4"><i class="fas fa-phone-alt"></i>
+                    080.7881.5542</a>
+                <a href="mailto:quylang88@gmail.com" class="text-white text-decoration-none"><i
+                        class="far fa-envelope"></i> quylang88@gmail.com</a>
+            </div>
+            <div class="header__right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <nav class="navSkytech navbar navbar-expand-md container">
+            <a class="navbar-brand text-center" href="#">
+                <p class="mb-0"><i class="fa fa-book"></i> SKY-TECH</p>
+                <p class="mb-0">COMPANY</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navSkytech"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navSkytech">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">ホーム<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">メッセージ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">情報</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">特徴</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            写真
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">イベント</a>
+                            <a class="dropdown-item" href="#">メンバー</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">お問合せ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- CAROUSEL -->
+    <section class="cyper-carousel">
+        <div id="carousel-skytech" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-skytech" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-skytech" data-slide-to="1"></li>
+                <li data-target="#carousel-skytech" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/img (130).jpeg" class="d-block w-100" alt="banner1">
+                    <div class="container carousel-caption">
+                        <h1>株式会社スカイテック</h1>
+                        <p>私たちと一緒に働きませんか？</p>
+                        <button class="btn">詳しく<i class="fa fa-angle-double-right"></i></button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img (15).jpeg" class="d-block w-100" alt="banner2">
+                    <div class="container carousel-caption">
+                        <h1>株式会社スカイテック</h1>
+                        <p>私たちと一緒に働きませんか？</p>
+                        <button class="btn">詳しく<i class="fa fa-angle-double-right"></i></button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img (16).jpeg" class="d-block w-100" alt="banner3">
+                    <div class="container carousel-caption">
+                        <h1>株式会社スカイテック</h1>
+                        <p>私たちと一緒に働きませんか？</p>
+                        <button class="btn">詳しく<i class="fa fa-angle-double-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-skytech" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-skytech" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

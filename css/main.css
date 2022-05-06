@@ -1,0 +1,194 @@
+/* GLOBAL */
+html,
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heading h2 {
+    font-size: 40px;
+    color: #ff4f81;
+    font-weight: bold;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.heading p {
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    color: black;
+    font-size: 17px;
+}
+
+.heading p::after {
+    display: block;
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: black;
+    margin: 20px auto;
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.heading--white p {
+    color: white;
+}
+
+/* HEADER */
+.header__top {
+    font-size: .875rem;
+    background-color: #ff4f81;
+}
+
+.header__left a {
+    transition: all .5s;
+}
+
+.header__left a:hover {
+    color: black !important;
+}
+
+.header__right a {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid black;
+    margin-left: .25rem;
+    transition: all .5s;
+}
+
+.header__right a:hover {
+    background-color: white;
+    border-color: white;
+    color: #ff4f81;
+}
+
+/* NAVBAR */
+.navSkytech a {
+    color: black;
+}
+
+.navSkytech .navbar-brand p:first-child {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.navSkytech .navbar-brand p:first-child i {
+    transform: skew(-10deg);
+}
+
+.navSkytech .navbar-brand p:last-child {
+    font-size: 11px;
+    color: #ff4f81;
+    letter-spacing: 3px;
+}
+
+#navSkytech .nav-item {
+    margin: 0 15px;
+}
+
+#navSkytech .nav-item::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #ff4f81;
+    display: block;
+    transition: all .5s;
+}
+
+#navSkytech .nav-item:hover::after {
+    width: 100%;
+}
+
+#navSkytech .nav-link {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .5s;
+}
+
+#navSkytech .nav-item:hover .nav-link {
+    color: #ff4f81;
+}
+
+#navSkytech .nav-item.active .nav-link {
+    color: #ff4f81;
+}
+
+#navSkytech .nav-item.active::after {
+    width: 100%;
+}
+
+#navSkytech .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+#navSkytech .dropdown-item {
+    color: white;
+    transition: all .5s;
+}
+
+#navSkytech .dropdown-item:focus,
+#navSkytech .dropdown-item:hover {
+    background-color: transparent;
+    color: #ff4f81;
+}
+
+.navSkytech .navbar-toggler {
+    color: #ff4f81;
+    background-color: black;
+    border-radius: 0;
+}
+
+.navSkytech button:focus {
+    outline: none;
+}
+
+/* CAROUSEL */
+#carousel-skytech .carousel-caption{
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#carousel-skytech .carousel-caption h1{
+    font-size: 52px;
+}
+
+#carousel-skytech .carousel-caption p{
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 1.8em;
+    width: 70%;
+    margin: 0 auto 25px;
+}
+
+#carousel-skytech .carousel-caption button{
+    font-size: 14px;
+    padding: 11px 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    letter-spacing: 2px;
+    transition: all .5s;
+}
+
+#carousel-skytech .carousel-caption button:hover{
+    background-color: #ff4f81;
+    border-color: #ff4f81;
+}
+
+#carousel-skytech a{
+    z-index: 11;
+}

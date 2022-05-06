@@ -4,13 +4,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Benefits</title>
+
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: "Lato", sans-serif;}
+        
+        /* Style the tab */
+        .tab {
+          float: left;
+          border: 1px solid #ccc;
+          background-color: #f1f1f1;
+          width: 30%;
+          height: 300px;
+        }
+        
+        /* Style the buttons inside the tab */
+        .tab button {
+          display: block;
+          background-color: inherit;
+          color: black;
+          padding: 22px 16px;
+          width: 100%;
+          border: none;
+          outline: none;
+          text-align: left;
+          cursor: pointer;
+          font-size: 17px;
+        }
+        
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+        
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+          background-color: #ccc;
+        }
+        
+        /* Style the tab content */
+        .tabcontent {
+          float: left;
+          padding: 0px 12px;
+          border: 3px solid #ccc;
+          width: 70%;
+          border-left: none;
+          height: 300px;
+          display: none;
+        }
+        
+        /* Clear floats after the tab */
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        /* ICON */
+        .icon i{
+            font-size: 50px;
+            color: #ff4f81;
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+        }
+        .icon-2 i {
+            color: aqua;
+        }
+        .icon-3 i {
+            color: red;
+        }
+        .icon img{
+            width: 100%;
+        }
+        
+        </style>
 </head>
 <body>
-    <!-- kkkk -->
-    <!-- hhh -->
-    <p>ppppp</p>
-    <img src="kme.jpg" alt="Italian Trulli">
+    <center><h2 style=" font-size:30pt;color: #ff4f81;">会社の利点<h2></center>
+    <!-- <p>
+        <div class="gallery">
+        <div class="desc"><p>充実の研修制度</p>
+            新人社員研修から、OJT研修やエリア研修など様々な研修制度をご用意しています。</div>
+        </div>
+        </p></br>
+        <p>
+            <div class="desc"><p>高率インセンティブ制度</p>
+            入社3年目（25歳）で年収650万円、入社5年目（30歳）で年収1,000万円以上の支給実績あり。
+            </div>
+        </p></br>
+        <p>
+            <div class="desc"><p>プライベートも充実</p>
+            完全週休二日制度で年間休日は120日以上とプライベートの時間もしっかりと確認できる。
+            </div>
+        </p></br>
+        <p>
+            <div class="desc"><p>成果を認め称えあう社風</p>
+            年に一度、「社員」および「営業」の各部門において高い業務功績をあげた改善活動、取り組みを
+            表彰するとともに、全従業員が参加し目標達成を祝うイベントを全国で開催する。
+            </div>
+        </p> -->
+
+        <div class="tab">
+            <button class="tablinks" onmouseover="openCity(event, '充実の研修制度')">充実の研修制度</button>
+            <button class="tablinks" onmouseover="openCity(event, '高率インセンティブ制度')">高率インセンティブ制度</button>
+            <button class="tablinks" onmouseover="openCity(event, 'プライベートも充実')">プライベートも充実</button>
+            <button class="tablinks" onmouseover="openCity(event, '成果を認め称えあう社風')">成果を認め称えあう社風</button>
+          </div>
+          
+          <div id="充実の研修制度" class="tabcontent">
+            <div class="icon icon-1"><i class="fab fa-leanpub"></i></div>
+            <h3>充実の研修制度</h3>
+            
+            <p> 新人社員研修から、OJT研修やエリア研修など様々な研修制度をご用意しています。</p>
+          </div>
+          
+          <div id="高率インセンティブ制度" class="tabcontent">
+              <div class="icon icon-2"><i class="fa fa-home"></i></div>
+            
+            <h3>高率インセンティブ制度</h3>
+            
+            <p>入社3年目（25歳）で年収650万円、入社5年目（30歳）で年収1,000万円以上の支給実績あり。</p> 
+          </div>
+          
+          <div id="プライベートも充実" class="tabcontent">
+            <div class="icon icon-3"><i class="fa fa-yen-sign"></i></div>
+            <h3>プライベートも充実</h3>
+            <p>完全週休二日制度で年間休日は120日以上とプライベートの時間もしっかりと確認できる。</p>
+          </div>
+
+          <div id="成果を認め称えあう社風" class="tabcontent">
+            <div class="icon"><img src="benefit_icn_7.png"></img></div>
+            <h3>成果を認め称えあう社風</h3>
+            <p>年に一度、「社員」および「営業」の各部門において高い業務功績をあげた改善活動、取り組みを
+                表彰するとともに、全従業員が参加し目標達成を祝うイベントを全国で開催する。</p>
+          </div>
+          
+          <div class="clearfix"></div>
+          
+          <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          </script>
+
+
 
 </body>
 </html>

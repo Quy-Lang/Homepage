@@ -36,3 +36,43 @@ body {
     text-align: center;
     font-size:  25px;;
 }
+
+table {
+	margin: 50px auto;
+	width: 500px;
+}
+td {
+	padding: 5px 0;
+}
+input,select,textarea {
+	padding: 5px;
+	width: 100%;
+}
+textarea {
+	height: 100px;
+}
+.required {
+	color: red;
+}
+#caution {
+	margin-top: 50px;
+	text-align: center;
+	color: #a00;
+}
+#complete {
+	margin-top: 50px;
+	text-align: center;
+	color: #060;
+}
+.button {
+    margin: auto;
+    width: 30%;
+    border: 3px solid hwb(132 38% 12%);
+    padding: 10px;
+  }
+.button:hover {
+    color: #ff4f81;
+}
+.required{
+    border-radius: 10px;
+}

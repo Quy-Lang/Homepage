@@ -80,9 +80,98 @@
     <!-- El Content Unit -->
     </div>
 
+    
+<html>
+<head>
+<meta charset="utf-8">
+<title>[PHP]お問い合わせフォーム</title>
+
+<style>
+
+table {
+	margin: 50px auto;
+	width: 500px;
+}
+td {
+	padding: 5px 0;
+}
+input,select,textarea {
+	padding: 5px;
+	width: 100%;
+}
+textarea {
+	height: 100px;
+}
+.required {
+	color: red;
+}
+#caution {
+	margin-top: 50px;
+	text-align: center;
+	color: #a00;
+}
+#complete {
+	margin-top: 50px;
+	text-align: center;
+	color: #060;
+}
+
+</style>
+</head>
+<body>
+
+<!-- <?php if (gGET('result')=='success'): ?>
+	<div id="complete">送信を実行しました。ご返信まで今しばらくお待ちください。</div>
+
+	<?php exit; ?>
+<?php elseif (gGET('result')=='error'): ?>
+	<div id="caution">必須事項をご入力ください</div>
+<?php endif; ?>
+
+<form method="post"> -->
+<br/>
+    <h1><center>問い合わせ</center>  </h1>
+<table>
+<tr>
+	<th>件名</th>
+	<td>
+	<select name="sub">
+		<option value="資料のご請求">資料のご請求</option>
+		<option value="お申込み">お申込み</option>
+		<option value="お問い合わせ">お問い合わせ</option>
+	</select>
+	</td>
+</tr>
+<tr>
+	<th>お名前<span class="required">*</span></th>
+	<td>
+	<input type="text" name="name">
+	</td>
+</tr>
+<tr>
+	<th>メールアドレス<span class="required">*</span></th>
+	<td>
+	<input type="text" name="from">
+	</td>
+</tr>
+<tr>
+	<th>お問い合わせ内容</th>
+	<td>
+	<textarea name="body"></textarea>
+	</td>
+</tr>
+<tr>
+	<td colspan="2"><input type="submit" value="送信"></td>
+</tr>
+</form>
+
+</body>
+</html>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
+
 
 </body>
 

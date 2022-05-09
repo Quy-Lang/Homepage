@@ -115,4 +115,31 @@ textarea {
 .required{
     border-radius: 10px;
 }
- 
+#field-message{
+    padding: 90px;
+}
+.contact{
+    font-size: 40px;
+    color: #ff4f81;
+    font-weight: bold;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+.form-group button{
+    background-color: #ff4f81;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    border-radius: 0;
+    color: #fff;
+    outline: none;
+    transition: all .5s;
+    border-radius: 15px;
+}
+
+.form-group button:hover{
+    background-color: #ec1955;
+    color: #fff;
+}
+.input-group-sm>.form-control{
+    padding: 21px 10px;
+}

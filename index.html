@@ -29,7 +29,8 @@
                                 <i class="fa fa-yen-sign"></i>
                             </div>
                             <h3>価格が見える</h3>
-                            <p>住宅業界の常識を変える秀光ビルドの「コミコミ価格」。<br>家を建てるために必要な申請から工事、生活に必要な設備などはすべてが標準装備です。<br>理想の家づくりを価格から応援いたします。</p>
+                            <p>住宅業界の常識を変える秀光ビルドの「コミコミ価格」。<br>家を建てるために必要な申請から工事、生活に必要な設備などはすべてが標準装備です。<br>理想の家づくりを価格から応援いたします。
+                            </p>
                         </div>
                     </div>
                     <div class="p-4 mb-4 mb-md-0 col-4 border border-dark">
@@ -38,7 +39,8 @@
                                 <i class="fa fa-hand-holding-heart"></i>
                             </div>
                             <h3>安心が見える</h3>
-                            <p>お客様に安心して頂くために、各業種に渡り、様々な工程にて<br>自社検査５項目＋第三者検査５項目の計10回検査を行います。<br>第三者住宅品質検査に於いては、WEBで工事進捗、検索内容をご確認いただけます。</p>
+                            <p>お客様に安心して頂くために、各業種に渡り、様々な工程にて<br>自社検査５項目＋第三者検査５項目の計10回検査を行います。<br>第三者住宅品質検査に於いては、WEBで工事進捗、検索内容をご確認いただけます。
+                            </p>
                         </div>
                     </div>
                     <br />
@@ -55,57 +57,54 @@
             </div>
         </div>
     </section>
-    
-    <!-- FORM CONTACT -->
+    <div class="contact">
+    <center><b>問い合わせ</b></center>
+</div>
+    ＜<br>
+    <div class="container">
+        <form role="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="form-group input-group-sm col-md-6 pr-md-1">
+                            <label for="field-first_name">姓</label>
+                            <input type="text" class="form-control form-control-sm text-muted" id="field-first_name"
+                                name="first_name" placeholder="First Name" autocomplete="given-name" required="">
+                        </div>
+                        <div class="form-group input-group-sm col-md-6 pl-md-1">
+                            <label for="field-last_name">名</label>
+                            <input type="text" class="form-control form-control-sm text-muted" id="field-last_name"
+                                name="last_name" placeholder="Last Name" autocomplete="family-name" required="">
+                        </div>
+                    </div>
+                    <div class="form-group input-group-sm">
+                        <label for="field-email">メール</label>
+                        <input type="email" class="form-control form-control-sm text-muted" id="field-email"
+                            name="email" placeholder="Email" autocomplete="email" required="">
+                    </div>
+                    <div class="form-group input-group-sm">
+                        <label for="field-telephone">電話番号</label>
+                        <input type="tel" class="form-control form-control-sm text-muted" id="field-telephone"
+                            name="telephone" placeholder="Phone" autocomplete="tel">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <center><label for="field-message">請求内容</label></center>
+                        <textarea id="field-message" class="form-control" name="message"></textarea>
+                    </div>
+                    <p class="small text-right">* 全て必須項目です</p>
+                </div>
+            </div>
 
-        <!-- <?php if (gGET('result')=='success'): ?>
-	<div id="complete">送信を実行しました。ご返信まで今しばらくお待ちください。</div>
+            <div class="submit">
+                <div class="form-group text-center">
+                    <button type="submit" class="btn" id="submit">送信</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
-	<?php exit; ?>
-<?php elseif (gGET('result')=='error'): ?>
-	<div id="caution">必須事項をご入力ください</div>
-<?php endif; ?>
-
-<form method="post"> -->
-        <br />
-        <h1>
-            <center>
-                <div class="text">問い合わせ</div>
-            </center>
-        </h1>
-        <table>
-            <tr>
-                <th>件名</th>
-                <td>
-                    <select name="sub">
-                        <option value="資料のご請求">資料のご請求</option>
-                        <option value="お申込み">お申込み</option>
-                        <option value="お問い合わせ">お問い合わせ</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <th>お名前<span class="required">*</span></th>
-                <td>
-                    <input type="text" name="name">
-                </td>
-            </tr>
-            <tr>
-                <th>メールアドレス<span class="required">*</span></th>
-                <td>
-                    <input type="text" name="from">
-                </td>
-            </tr>
-            <tr>
-                <th>お問い合わせ内容</th>
-                <td>
-                    <textarea name="body"></textarea>
-                </td>
-            </tr>
-            
-                <center><td colspan="2"><a class="button" href="#" style="background-color:rgb(247, 247, 243);margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%;border-radius: 20px 20px 20px 20px;"><center>送信</center></a></td></center>
-            
-            </form>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

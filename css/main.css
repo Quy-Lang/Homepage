@@ -81,6 +81,7 @@ table {
 }
 td {
 	padding: 5px 0;
+
 }
 input,select,textarea {
 	padding: 5px;
@@ -114,3 +115,4 @@ textarea {
 .required{
     border-radius: 10px;
 }
+ 

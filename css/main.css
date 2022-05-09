@@ -115,8 +115,8 @@ textarea {
 .required{
     border-radius: 10px;
 }
-#field-message{
-    padding: 90px;
+textarea.form-control {
+    height: 230px;
 }
 .contact{
     font-size: 40px;

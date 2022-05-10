@@ -64,3 +64,41 @@ li{
   font-size: 30px;
   color:blue;
 }
+
+/* BENEFIT */
+.benefit__content > p{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0 5rem;
+  line-height: 1.8em;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+}
+
+.benefit__item .benefit__icon{
+  text-align: center;
+  color: #ff4f81;
+}
+
+.benefit__item i{
+  font-size: 2rem;
+}
+
+.benefit__item h3{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+  margin: 1rem 0;
+}
+
+.benefit__item p{
+  color: #999;
+  font-size: 15px;
+  line-height: 1.8em;
+  margin: 10px 0 0;
+  letter-spacing: 1px;
+}

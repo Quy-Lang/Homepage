@@ -1,14 +1,14 @@
 .heading p::after{
     display: block;
     content: "";
-    width: 100px;
+    width: 70px;
     height: 2px;
     background-color: black;
-    margin: 5px auto;
+    margin: 20px auto;
 }
 .heading p{
 	font-size:11px;
-	color:black-bold;
+	color:black;
 	text-align:center;
 	}
 
@@ -36,7 +36,7 @@ body {
 h4{
 	color:black;
 	text-align:center;
-	font-size:15px;
+	font-size:20px;
 	font-weight: bold;
 	
 }
@@ -51,5 +51,39 @@ p{
 	color:grey;
 	text-align:center;
 	font-size:13px;
-	}
+	letter-spacing:1px;
+	line-height:1.8em;
+}
+.member_caption p{
+	color:black;
+}
 
+.member_content img{
+	width:100%;
+	display; block;
+}
+.member_content{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  
+}
+ 
+ .member_caption {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  z-index: 2;
+  color: black;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background: #ff4f81;
+  transition: 1s;
+  opacity:0.7;
+}
+ 
+.member_content:hover .member_caption {
+  bottom: 0;
+}

@@ -75,11 +75,13 @@ body {
 }
 
 /* HEADER FIXED */
-header#headerFixed {
+#navFixed {
     position: fixed;
+    z-index: 999;
     background-color: #fff;
     transition: 0.5s;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 0 15%;
 }
 
 /* NAVBAR */

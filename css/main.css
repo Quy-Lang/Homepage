@@ -85,24 +85,25 @@ body {
     opacity: 0;
 }
 
+#navSkytech{
+    height: 70px;
+}
+
 /* NAVBAR */
+.navbar-brand img{
+    width: 30px;
+    display: inline-block;
+}
+.navbar-brand>p{
+    display: inline;
+}
 .navSkytech a {
     color: black;
 }
 
-.navSkytech .navbar-brand p:first-child {
-    font-size: 36px;
+.navbar-brand p {
+    font-size: 23px;
     font-weight: 700;
-}
-
-.navSkytech .navbar-brand p:first-child i {
-    transform: skew(-10deg);
-}
-
-.navSkytech .navbar-brand p:last-child {
-    font-size: 11px;
-    color: #ff4f81;
-    letter-spacing: 3px;
 }
 
 #navSkytech .nav-item {

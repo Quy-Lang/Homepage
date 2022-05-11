@@ -185,20 +185,15 @@ body {
 }
 
 /* MESSAGE */
-.message__item h3 {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
 
 .message__item p {
     width: 80%;
     margin: 0 auto;
     padding: 1rem 0 5rem;
-    line-height: 30px;
+    line-height: 40px;
     letter-spacing: 1px;
     color: #999;
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
 }
 

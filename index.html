@@ -13,6 +13,8 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <link rel="stylesheet" href="css/animate.css">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>SKY-TECH</title>
@@ -33,7 +35,7 @@
             <div class="header__right">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-weixin"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
@@ -47,7 +49,7 @@
                 <i class="fa fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navSkytech">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="mainNav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">ホーム<span class="sr-only">(current)</span></a>
                     </li>
@@ -80,7 +82,7 @@
             <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navSkytech">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto" id="mainNavFixed">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">ホーム<span class="sr-only">(current)</span></a>
                 </li>
@@ -182,7 +184,7 @@
             <p>スカイテックの3つことが見えます。スカイテックは、「価格が見える」「安心が見える」「性能が見える」の3つの見えるでお客様の理想の家づくりを叶えます。</p>
             <div class="info__table container">
                 <div class="row">
-                    <div class="p-4 mb-4 mb-md-0 col-4 border border-dark">
+                    <div class="p-4 mb-4 mb-md-0 col-4 border border-dark wow fadeInLeft">
                         <div class="info__item">
                             <div class="info__icon mt-4">
                                 <i class="fa fa-yen-sign"></i>
@@ -192,7 +194,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="p-4 mb-4 mb-md-0 col-4 border border-dark">
+                    <div class="p-4 mb-4 mb-md-0 col-4 border border-dark wow fadeInUp">
                         <div class="info__item">
                             <div class="info__icon mt-4">
                                 <i class="fa fa-hand-holding-heart"></i>
@@ -204,7 +206,7 @@
                         </div>
                     </div>
                     <br />
-                    <div class="p-4 mb-4 mb-md-0 col-4 border border-dark">
+                    <div class="p-4 mb-4 mb-md-0 col-4 border border-dark wow fadeInRight">
                         <div class="info__item">
                             <div class="info__icon mt-4">
                                 <i class="fa fa-desktop"></i>
@@ -483,6 +485,8 @@
     <a href="#" class="back-to-top cd-top text-replace js-cd-top">
         <i class="fa fa-angle-up"></i>
     </a>
+
+    <script src="js/wow.min.js"></script>
 
     <!-- BACK-TO-TOP JS -->
     <script src="./js/util.js"></script>

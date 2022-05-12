@@ -147,6 +147,25 @@ body {
 }
 
 /* CAROUSEL */
+#carousel-skytech{
+    height: 700px;
+}
+#carousel-skytech .carousel-inner{
+    height: 100%;
+}
+#carousel-skytech .carousel-item{
+    height: 100%;
+    background-size: cover !important;
+}
+#carousel-skytech .carousel-item:first-of-type{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img_00.jpg);
+}
+#carousel-skytech .carousel-item:nth-of-type(2){
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img_e479354a3bf3cc2fc9d35fb49f8e4f27297841.jpg);
+}
+#carousel-skytech .carousel-item:nth-of-type(3){
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img_index_001.jpg);
+}
 #carousel-skytech .carousel-caption {
     top: 55%;
     left: 50%;

@@ -21,3 +21,11 @@ for (var i = 0; i < listNavFixed.length; i++) {
         this.className += " active";
     });
 };
+
+for (var i = 0; i < listNav.length; i++) {
+    listNav[i].addEventListener("click", function () {
+        var current = document.querySelector("#mainNav .active");
+        current.className = current.className.replace("active", "");
+        this.className += " active";
+    });
+};

@@ -618,6 +618,10 @@ footer {
         display: none;
     }
 
+    .navSkytech .nav-link {
+        font-size: 14px;
+    }
+
     /* CAROUSEL */
     #carousel-skytech {
         height: 500px;
